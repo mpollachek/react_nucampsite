@@ -6,7 +6,7 @@ import {
 } from 'reactstrap';
 
 const CampsiteCard = ({campsite}) => {
-  const { image, name }
+  const { image, name } = campsite;
   return( 
   <Card>
     <CardImg
