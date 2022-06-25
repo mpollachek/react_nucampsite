@@ -4,7 +4,7 @@ import ContactForm from '../components/ContactForm';
 
 const ContactPage = () => {
   return (
-    <container>
+    <Container>
       <SubHeader current='Contact Us' />
       <Row  className='row-content align-items-center'>
         <Col sm='4'>
@@ -44,7 +44,7 @@ const ContactPage = () => {
           <ContactForm />
         </Col>      
       </Row>
-    </container>
+    </Container>
   );
 };
 
