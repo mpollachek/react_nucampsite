@@ -64,6 +64,16 @@ export const selectAllPartners = (state) => {
 //   return PARTNERS.find((partner) => partner.featured);
 // };
 
+// export const selectFeaturedPartners = (state) => {
+//   return state.partners.partnersArray.find((partner) => partner.featured);
+// };
+
 export const selectFeaturedPartners = (state) => {
-  return state.partners.partnersArray.find((partner) => partner.featured);
+  return {
+     featuredItem: state.partners.partnersArray.find(
+          (partner) => partner.featured
+      ),
+      isLoading: state.partners.isLoading,
+      errMsg: state.partners.errMsg
+  };
 };
